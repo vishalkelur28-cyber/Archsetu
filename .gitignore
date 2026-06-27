@@ -1,0 +1,18 @@
+node_modules/
+out/
+*.vsix
+
+# local VS Code settings
+.vscode/settings.json
+.vscode/launch.json
+
+# Claude Code internal files — never push
+.claude/
+
+# coverage
+coverage/
+.nyc_output/
+
+# OS
+.DS_Store
+Thumbs.db

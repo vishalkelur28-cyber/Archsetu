@@ -1,0 +1,117 @@
+{
+  "name": "archsetu",
+  "displayName": "ArchSetu",
+  "description": "Understand any JS/TS codebase instantly — call graphs, dead code, blast radius, entry points, and a health dashboard. No AI needed.",
+  "version": "0.3.0",
+  "publisher": "Archsetu",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#0a0a1a",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Visualization"
+  ],
+  "keywords": [
+    "codebase",
+    "analysis",
+    "call graph",
+    "dead code",
+    "blast radius",
+    "entry points",
+    "health dashboard",
+    "complexity",
+    "refactor",
+    "javascript",
+    "typescript"
+  ],
+  "bugs": {
+    "email": "technovatic@gmail.com"
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "archsetu.explainFile",
+        "title": "Explain File",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.showFunctions",
+        "title": "Show Functions (Jump)",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.listFunctions",
+        "title": "List Functions",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.functionGraph",
+        "title": "Function Graph (This File)",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.crossFileGraph",
+        "title": "Cross-File Call Graph",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.deadCode",
+        "title": "Find Dead Code",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.blastRadius",
+        "title": "Blast Radius Analysis",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.entryPoints",
+        "title": "Detect Entry Points",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.healthDashboard",
+        "title": "Codebase Health Dashboard",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.changeImpact",
+        "title": "Change Impact Simulator",
+        "category": "ArchSetu"
+      },
+      {
+        "command": "archsetu.feedback",
+        "title": "Share Feedback / Pain Points",
+        "category": "ArchSetu"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "node esbuild.js",
+    "build": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "lint": "tsc --noEmit",
+    "vscode:prepublish": "node esbuild.js --production",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.19.43",
+    "@types/vscode": "^1.85.0",
+    "esbuild": "^0.20.0",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.11",
+    "typescript": "^5.3.3"
+  }
+}
