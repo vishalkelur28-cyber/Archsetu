@@ -5,6 +5,11 @@
   "version": "0.3.0",
   "publisher": "Archsetu",
   "license": "MIT",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/vishalkelur28-cyber/Archsetu.git"
+},
+"homepage": "https://github.com/vishalkelur28-cyber/Archsetu",
   "icon": "icon.png",
   "galleryBanner": {
     "color": "#0a0a1a",
@@ -32,8 +37,9 @@
     "typescript"
   ],
   "bugs": {
-    "email": "technovatic@gmail.com"
-  },
+  "url": "https://github.com/vishalkelur28-cyber/Archsetu/issues",
+  "email": "technovatic@gmail.com"
+},
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
