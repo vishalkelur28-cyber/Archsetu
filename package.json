@@ -36,6 +36,15 @@
     "javascript",
     "typescript"
   ],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/vishalkelur28-cyber/Archsetu.git"
+},
+"homepage": "https://github.com/vishalkelur28-cyber/Archsetu",
+"bugs": {
+  "url": "https://github.com/vishalkelur28-cyber/Archsetu/issues",
+  "email": "technovatic@gmail.com"
+},
   "bugs": {
   "url": "https://github.com/vishalkelur28-cyber/Archsetu/issues",
   "email": "technovatic@gmail.com"
